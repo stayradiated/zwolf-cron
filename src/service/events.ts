@@ -1,11 +1,14 @@
 import { createEvent } from '@zwolf/turbine-event'
 
-export const create = createEvent<{
-  schedule: string,
-  type: string,
-  payload: object,
-}>('cron.create')
+const events = {
+  create: createEvent<{
+    schedule: string,
+    type: string,
+    payload: object,
+  }>('cron.create'),
+  destroy: createEvent<{
+    id: string,
+  }>('cron.destroy'),
+}
 
-export const destroy = createEvent<{
-  id: string,
-}>('cron.destroy')
+export default events

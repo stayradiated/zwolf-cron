@@ -17,7 +17,7 @@ class CloudFirestoreCronStore implements CronStore {
 
     return {
       ...doc.data,
-      id: doc.ref.id
+      id: doc.ref.id,
     }
   }
 
@@ -37,7 +37,7 @@ class CloudFirestoreCronStore implements CronStore {
     const doc = await db.get(FirestoreCronJobCollection, jobId)
     return {
       ...doc.data,
-      id: doc.ref.id
+      id: doc.ref.id,
     }
   }
 
@@ -45,7 +45,7 @@ class CloudFirestoreCronStore implements CronStore {
     const docs = await db.all(FirestoreCronJobCollection)
     return docs.map((doc) => ({
       ...doc.data,
-      id: doc.ref.id
+      id: doc.ref.id,
     }))
   }
 
