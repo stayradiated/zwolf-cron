@@ -1,6 +1,6 @@
 {
   "name": "@zwolf/cron",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A library & service for dispatching events at regular intervals.",
   "main": "./dist/index.js",
   "repository": "https://github.com/stayradiated/zwolf-cron",
