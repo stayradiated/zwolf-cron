@@ -27,6 +27,6 @@
     "@zwolf/turbine": "^3.7.0",
     "@zwolf/turbine-event": "^3.7.0",
     "cron-parser": "^2.13.0",
-    "luxon": "^1.22.0"
+    "luxon": "^2.5.2"
   }
 }
